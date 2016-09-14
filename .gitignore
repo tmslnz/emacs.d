@@ -1,0 +1,15 @@
+/auto-save-list/
+/backups/
+/desktop/
+/elpa/
+
+/\#*\#
+/ac-comphist.dat
+/custom.el
+/ido.last
+/projectile-bookmarks.eld
+/recentf
+/user.el
+
+!.gitkeep
+!.gitignore
