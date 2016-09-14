@@ -4,6 +4,7 @@
 /elpa/
 
 /\#*\#
+/.\#*\#
 /ac-comphist.dat
 /custom.el
 /ido.last
