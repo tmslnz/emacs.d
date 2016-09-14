@@ -46,45 +46,47 @@
 
 ;;; Set Default Packages
 (defvar tmslnz/packages '(
-					; ac-slime
-			  auto-complete ; what it says
-			  autopair ; auto-closes parens
-					; clojure-mode
-					; coffee-mode
-			  csharp-mode
-					; deft ; Kinda like Notational Velocity
-					; erlang
-					; feature-mode
-			  flycheck
-					; gist
-					; go-autocomplete
-					; go-eldoc
-					; go-mode
-					; graphviz-dot-mode
-					; haml-mode
-					; haskell-mode
-			  highlight-indent-guides
-			  htmlize
-					; idris-mode
-			  magit
-			  markdown-mode
-					; marmalade
-			  nodejs-repl
-					; o-blog
-					; org
-			  paredit
-			  php-mode
-			  projectile
+                    ; ac-slime
+            auto-complete ; what it says
+            autopair ; auto-closes parens
+	            ; clojure-mode
+                    ; coffee-mode
+            csharp-mode
+                    ; deft ; Kinda like Notational Velocity
+                    ; erlang
+                    ; feature-mode
+            flycheck
+                    ; gist
+                    ; go-autocomplete
+                    ; go-eldoc
+                    ; go-mode
+                    ; graphviz-dot-mode
+                    ; haml-mode
+                    ; haskell-mode
+            highlight-indent-guides
+            htmlize
+                    ; idris-mode
+	    less-css-mode
+	    magit
+            markdown-mode
+                    ; marmalade
+            nodejs-repl
+                    ; o-blog
+                    ; org
+            paredit
+            php-mode
+            projectile
+	    pug-mode
 					; puppet-mode
-			  restclient
-					; rvm
-					; scala-mode
-			  smex
-					; sml-mode
-			  solarized-theme
-			  web-mode
-					; writegood-mode
-			  yaml-mode
+            restclient
+                    ; rvm
+                    ; scala-mode
+            smex
+                    ; sml-mode
+            solarized-theme
+            web-mode
+                    ; writegood-mode
+            yaml-mode
     )
     "Default packages")
 
@@ -127,6 +129,12 @@
     (load-theme 'solarized-light t)
     (load-theme 'wombat t))
 
+;;; Pug (neé Jade) mode
+(require 'pug-mode)
+
+;;; Less CSS mode
+(require 'less-css-mode)
+
 ;;; IDO mode settings
 (ido-mode t)
 (setq ido-enable-flex-matching t
@@ -140,7 +148,7 @@
 (setq electric-pair-pairs '(
                             (?\" . ?\")
                             (?\{ . ?\})
-			    ))
+                ))
 (require 'paren)
 (show-paren-mode t)
 (setq show-paren-delay 0)
